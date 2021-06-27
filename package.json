@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-log",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Base `b` logarithm.",
   "license": "Apache-2.0",
   "author": {
