@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.log;
+})();
 })();
 </script>
 ```
@@ -102,6 +104,7 @@ v = log( 2.0, -4.0 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var b;
 var x;
@@ -113,6 +116,7 @@ for ( i = 0; i < 100; i++ ) {
     console.log( 'log( %d, %d ) = %d', x, b, log( x, b ) );
 }
 
+})();
 })();
 </script>
 </body>
@@ -214,15 +218,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp/tree/umd
+[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp/tree/umd/tree/umd
 
-[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/umd
+[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/umd/tree/umd
 
-[@stdlib/math/base/special/log10]: https://github.com/stdlib-js/math-base-special-log10/tree/umd
+[@stdlib/math/base/special/log10]: https://github.com/stdlib-js/math-base-special-log10/tree/umd/tree/umd
 
-[@stdlib/math/base/special/log1p]: https://github.com/stdlib-js/math-base-special-log1p/tree/umd
+[@stdlib/math/base/special/log1p]: https://github.com/stdlib-js/math-base-special-log1p/tree/umd/tree/umd
 
-[@stdlib/math/base/special/log2]: https://github.com/stdlib-js/math-base-special-log2/tree/umd
+[@stdlib/math/base/special/log2]: https://github.com/stdlib-js/math-base-special-log2/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
