@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import log from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@esm/index.mjs';
+import log from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@v0.2.1-esm/index.mjs';
 ```
 
 #### log( x, b )
@@ -88,7 +88,7 @@ v = log( 2.0, -4.0 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import log from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@esm/index.mjs';
+import log from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@v0.2.1-esm/index.mjs';
 
 var b;
 var x;
