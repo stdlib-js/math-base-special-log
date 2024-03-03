@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -35,38 +35,32 @@ limitations under the License.
 
 > Compute the base `b` [logarithm][logarithm].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-log
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-log = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var log = require( 'path/to/vendor/umd/math-base-special-log/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.log;
-})();
-</script>
+var log = require( '@stdlib/math-base-special-log' );
 ```
 
 #### log( x, b )
@@ -104,15 +98,10 @@ v = log( 2.0, -4.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var log = require( '@stdlib/math-base-special-log' );
 
 var b;
 var x;
@@ -123,16 +112,101 @@ for ( i = 0; i < 100; i++ ) {
     b = round( randu() * 5.0 );
     console.log( 'log( %d, %d ) = %d', x, b, log( x, b ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/log.h"
+```
+
+#### stdlib_base_log( x, b )
+
+Computes the base `b` logarithm of `x`.
+
+```c
+double v = stdlib_base_log( 100.0, 10.0 );
+// returns 2.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **b**: `[in] double` input value.
+
+```c
+double stdlib_base_log( const double x, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/log.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double out;
+    double x;
+    double b;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
+        b = ( (double)rand() / (double)RAND_MAX ) * 5.0;
+        out = stdlib_base_log( x, b );
+        printf( "log(%lf, %lf) = %lf\n", x, b, out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -228,15 +302,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp/tree/umd
+[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp
 
-[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/umd
+[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln
 
-[@stdlib/math/base/special/log10]: https://github.com/stdlib-js/math-base-special-log10/tree/umd
+[@stdlib/math/base/special/log10]: https://github.com/stdlib-js/math-base-special-log10
 
-[@stdlib/math/base/special/log1p]: https://github.com/stdlib-js/math-base-special-log1p/tree/umd
+[@stdlib/math/base/special/log1p]: https://github.com/stdlib-js/math-base-special-log1p
 
-[@stdlib/math/base/special/log2]: https://github.com/stdlib-js/math-base-special-log2/tree/umd
+[@stdlib/math/base/special/log2]: https://github.com/stdlib-js/math-base-special-log2
 
 <!-- </related-links> -->
 
