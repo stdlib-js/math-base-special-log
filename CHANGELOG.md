@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-01)
+## Unreleased (2024-10-15)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`03a4ad7`](https://github.com/stdlib-js/stdlib/commit/03a4ad79edbde3654b67e84a4f8d19ad0f670003) - **style:** fix spacing _(by Athan Reines)_
 -   [`588c4b4`](https://github.com/stdlib-js/stdlib/commit/588c4b4156c4efee6a90b34b329c39f3c8f4a9d6) - **docs:** update function description in `math/base/special/log` _(by Gunj Joshi, Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Gunj Joshi
 -   Philipp Burckhardt
 
